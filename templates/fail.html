@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Failed to Download</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<link rel="shortcut icon" type="image/png" href="{% static 'favico.png' %}">
+	<link rel="stylesheet" href="{% static 'style.css' %}"/>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+
+
+</head>
+<body>
+	<style>
+		body{
+			background-color: #F0FFFF;
+		}
+	</style>
+    <div class="container" style="text-align: center;">
+		<h2>Sorry, your video is not Downloadable</h2>
+		<img src="{% static 'fa.png' %}" style="width: 300px; text-align: center;">
+		<form action="goback/" style="padding: 30px; text-align: center;">
+			<button  type="submit" class="btn btn-primary mb-2">Main Page</button>
+		</form>
+    </div>
+</body>
+</html>

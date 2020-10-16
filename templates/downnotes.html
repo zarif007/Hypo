@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>downloading Notes</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<link rel="shortcut icon" type="image/png" href="{% static 'favico.png' %}">
+	<link rel="stylesheet" href="{% static 'style.css' %}"/>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<style>
+		body{
+			background-color: #F0FFFF;
+		}
+	</style>
+    <div class="container" style="padding-top: 50px; text-align: center;">
+        <h2>For downloading Note</h2>
+    </div>
+    <form action="download/"  method="get">
+		<div class="input-group input-group-lg container" style="padding-top: 40px; padding-bottom: 50px;">
+			<div class="col-sm-12">
+				<h2>Paste your link here</h2>
+			</div>
+			<div class="col-sm-12">
+				<input name="url" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Youtube link">
+			</div>
+			<div style="padding: 20px; text-align: center;">
+				<!-- <button  type="submit" class="btn btn-primary mb-5" >Submit The Link</button> -->
+				
+				<button  type="submit" class="waves-effect waves-light btn-large" >Download Notes</button> 
+
+			</div>
+		</div>
+	</form>
+
+	<form action="goback/" style="padding: 30px; text-align: center;">
+		<button  type="submit" class="btn btn-primary mb-2">Main Page</button>
+	</form>
+
+    
+</body>
+</html>

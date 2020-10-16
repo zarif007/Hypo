@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HYPO</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+
+	<link rel="shortcut icon" type="image/png" href="{% static 'favico.png' %}">
+	<!-- <link rel="stylesheet" href="{% static 'style.css' %}"/> -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<style>
+		body{
+			background-color:	#F0FFFF;
+		}
+	</style>
+	<!-- -----------Navigation Bar----------- -->
+	<div class="fixed-top ">
+		<div class="collapse" id="navbarToggleExternalContent">
+		  <div class="bg-dark p-4">
+			<h5 class="text-white h4">Downloading Options</h5>
+			<form action="downnotes/" style="padding-top: 20px;">
+				<button type="submit" class="btn btn-secondary mb-5" >download Notes</button>
+			</form>
+
+			<form action="downaudio/">
+				<button  type="submit" class="btn btn-secondary mb-5" >download Audio</button>
+			</form>
+
+			<form action="downvideo/" >
+				<button  type="submit" class="btn btn-secondary mb-5" >download Video</button>
+			</form>
+			
+		  </div>
+		</div>
+		<nav class="navbar navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <h2 >Hypo</h2>
+		</nav>
+	  </div>
+
+
+	<!-- -------------Header image and text----------- -->
+	<div class="container" style="padding-top: 50px;">
+		<div class="row" style="text-align: center;">
+			<img class="col-sm-4"  src="{% static 'hp.png' %}" style="width: 250px;">
+			<h1 class="col-sm-8" style="padding-top: 50px;">How to use HYPO for BuX</h1>
+		</div>
+	</div>
+
+
+	<!-- -----------------Card---------------- -->
+	<div class="container" style="padding-left: 40px; ">
+		<div class="row">
+			<div class="card col-sm-3" style="width: 18rem;">
+				<img src="{% static 'h1.png' %}" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">1st Step</h5>
+				  <p class="card-text">Go to the lecture video & click the bottom left Youtube button.</p>
+				</div>
+			</div>
+	
+			<div class="card col-sm-3" style="width: 18rem;">
+				<img src="{% static 'h2.png' %}" class="card-img-top" alt="..." style="padding-top: 20px;">
+				<div class="card-body">
+				  <h5 class="card-title">2nd Step</h5>
+				  <p class="card-text">You will be directed to Youtube app/browser, Now copy the link from there.</p>
+				</div>
+			</div>
+	
+			<div class="card col-sm-3" style="width: 18rem;">
+				<img src="{% static 'h9.png' %}" class="card-img-top" alt="..." style="padding-top: 20px;">
+				<div class="card-body">
+				  <h5 class="card-title">3rd Step</h5>
+				  <p class="card-text">Select a downloading option,after that, you will be directed to a new page.</p>
+				</div>
+			</div>
+
+			<div class="card col-sm-3" style="width: 18rem;">
+				<img src="{% static 'h8.png' %}" class="card-img-top" alt="..." style="padding-top: 20px;">
+				<div class="card-body">
+				  <h5 class="card-title">4th Step</h5>
+				  <p class="card-text">lastly, paste and click the Download button.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+
+
+	<!-- -------------------Link bar---------------------->
+	<div class="container" style="text-align: center; padding-top: 30px;">
+		<h1>Avialable Downloading Options</h1>
+	</div>
+
+	<form action="downnotes/" style="text-align: center;">
+		<div class="container" style="padding: 20px;">
+			<button type="submit" class="btn btn-dark btn-block" >download Notes</button>
+		</div>
+	</form>
+
+	<form action="downaudio/" style="text-align: center;">
+		<div class="container" style="padding: 20px;">
+			<button  type="submit" class="btn btn-dark btn-block" >download Audio</button>
+		</div>
+	</form>
+
+	<form action="downvideo/" style="text-align: center;">
+		<div class="container" style="padding: 20px; padding-bottom: 50px;">
+			<button  type="submit" class="btn btn-dark btn-block" >download Video</button>
+		</div>
+	</form>
+
+	
+
+
+	<!-- --------------------DrawBacks---------------- -->
+	<ul class="list-group container" style="padding-bottom: 40px;">
+		<li class="list-group-item"><h5>DrawBacks</h5></li>
+		<li class="list-group-item">You might not able to download video/audio/notes from some videos</li>
+		<li class="list-group-item">But we are ensuring that, you can download video/audio/notes from almost every videos of BuX</li>
+		<li class="list-group-item">Downloaded videos maynot be in HD, We are working on it</li>
+	</ul>
+
+
+
+	<!-- -------------------Footer----------------- -->
+	<footer class="page-footer bg-dark"  >
+		<div class="container">
+		  <div class="row">
+			<div class="col l6 s12">
+			  <!-- <h5 class="white-text">Footer Content</h5> -->
+			  <h5 class="grey-text text-lighten-4">If you face any problem using Hypo.</h5>
+			</div>
+			<div class="col l4 offset-l2 s12">
+			  <h5 class="white-text">Reach me via</h5>
+			  <ul>
+				<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/zarif.khan.10004/" target="blank">facebook</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">zarifhuq786@gmail.com</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">zarifhuq007@gmail.com</a></li>
+				<li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/md-zarif-ul-huq-408b4a198/" target="blank">linkedin</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="footer-copyright">
+		  <div class="container">
+		  © 2020 Copyright
+		  </div>
+		</div>
+	  </footer>
+	
+</body>
+</html>
